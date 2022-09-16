@@ -191,15 +191,15 @@ void SaveData ( char * etiquette , char * data , char * checksum)
   else if (strstr (etiquette , "PEJP")    != NULL ) {strcpy (CurrentTeleinfo.ejp.PEJP,data ) ;CurrentTeleinfo.detecttarif = eEjp;}
   else if (strstr (etiquette , "PTEC")    != NULL ) {strcpy (CurrentTeleinfo.PTEC,data ) ;}
   else if (strstr (etiquette , "DEMAIN")  != NULL ) {strcpy (CurrentTeleinfo.DEMAIN,data ) ;}
-  else if (strstr (etiquette , "IINST")   != NULL ) {strcpy (CurrentTeleinfo.mono.IINST,data ) ; CurrentTeleinfo.detecttri = false;}
   else if (strstr (etiquette , "IINST1")  != NULL ) {strcpy (CurrentTeleinfo.tri.IINST1,data ) ; CurrentTeleinfo.detecttri = true;}
   else if (strstr (etiquette , "IINST2")  != NULL ) {strcpy (CurrentTeleinfo.tri.IINST2,data ) ; CurrentTeleinfo.detecttri = true;}
   else if (strstr (etiquette , "IINST3")  != NULL ) {strcpy (CurrentTeleinfo.tri.IINST3,data ) ; CurrentTeleinfo.detecttri = true;}
+  else if (strstr (etiquette , "IINST")   != NULL ) {strcpy (CurrentTeleinfo.mono.IINST,data ) ; CurrentTeleinfo.detecttri = false;}
   else if (strstr (etiquette , "ADPS")    != NULL ) {strcpy (CurrentTeleinfo.ADPS,data ) ;}
-  else if (strstr (etiquette , "IMAX")    != NULL ) {strcpy (CurrentTeleinfo.mono.IMAX,data ) ;CurrentTeleinfo.detecttri = false;}
   else if (strstr (etiquette , "IMAX1")   != NULL ) {strcpy (CurrentTeleinfo.tri.IMAX1,data ) ; CurrentTeleinfo.detecttri = true;}
   else if (strstr (etiquette , "IMAX2")   != NULL ) {strcpy (CurrentTeleinfo.tri.IMAX2,data ) ; CurrentTeleinfo.detecttri = true;}
   else if (strstr (etiquette , "IMAX3")   != NULL ) {strcpy (CurrentTeleinfo.tri.IMAX3,data ) ; CurrentTeleinfo.detecttri = true;}
+  else if (strstr (etiquette , "IMAX")    != NULL ) {strcpy (CurrentTeleinfo.mono.IMAX,data ) ; CurrentTeleinfo.detecttri = false;}
   else if (strstr (etiquette , "PMAX")    != NULL ) {strcpy (CurrentTeleinfo.tri.PMAX,data ) ;}
   else if (strstr (etiquette , "PAPP")    != NULL ) {strcpy (CurrentTeleinfo.PAPP,data ) ;}
   else if (strstr (etiquette , "HHPHC")   != NULL ) {strcpy (CurrentTeleinfo.HHPHC,data ) ;}
